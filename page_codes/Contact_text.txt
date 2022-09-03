@@ -1,0 +1,136 @@
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Contact </title>
+		<link rel="stylesheet" href="../styles/styles.css">
+		<style>
+			body {
+				font-family: Roboto Thin;
+				background-image: url('../images/background-contact.png');
+				background-attachment: fixed;
+				background-size: 100% 100%;
+			}
+			
+			.width-30 {
+				width: 30%;
+			}	
+
+			.button-yellow {
+				background-color: #F3D000;
+				border: none;
+				color: #442d4d;
+				padding: 5px 25px 5px 25px;
+				transition: 0.5s;
+			}
+
+			.button-yellow:hover {
+				background-color: #ddd4e0;
+				border: none;
+				color: #442d4d;
+				padding: 5px 25px 5px 25px;
+			}
+					
+			.contact-question {
+				background-color: rgb(255, 255, 255, 0.1);
+				margin-bottom: 4px;
+				text-align: center;
+			}
+
+			.contact-question-title {
+				color:  white;
+				font-size: 25px;
+			}	
+
+
+		</style>	
+		<script>
+			function questionsent(){
+				alert("Your question has been sent")
+			}
+		</script>	
+	</head>
+	
+	<body>
+	<!-- Header -->
+	<div>
+		<a href="Home.html">
+			<img src="../images/let.jpg" alt="logo not loaded" height="80"/>
+		</a>
+		<div class="navigation-links">
+			<a href="Home.html" class="navigation-link">Home</a>
+			<a href="About.html" class="navigation-link">About</a>
+			<a href="Course.html" class="navigation-link">Course</a>
+			<a href="Contact.html" class="navigation-link">Contact</a>
+		</div>
+	</div>
+	
+	<!-- Middle -->
+	<div>	
+		<div class ="width-100 display-if">
+			<!-- Map -->	
+			<div class ="width-100">
+				<iframe
+					width="100%" 
+					height="410" 
+					frameborder="0" 
+					scrolling="no" 
+					marginheight="0" 
+					marginwidth="0" 
+					src="https://maps.google.com/maps?width=100%25&amp;height=410&amp;hl=en&amp;q=basmath,%20maharashtra+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+					<a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a>
+				</iframe>
+			</div>	
+		
+			<!-- Question -->
+			<div class ="width-100 contact-question">
+				<span class="contact-question-title"> Send us your Questions: </span>
+				<form action="" method="get" target="_self" class="ghostwhite-text">
+					Name: <br> <input type="text" name="nameField" class="width-30" required/> </br>
+					Surname: <br> <input type="text" name="SurnameField" class="width-30" required/> </br>
+					age: <br> <input type="date" name="ageField" class="width-30" value="1996-12-21" max="2025-12-21" required/> </br>
+					Gender: <br>
+					Male: <input type="radio" name="Gender" value="male"> Female:<input type="radio" name="Gender" value="female" checked> </br>
+					Tel: <br> <input type="tel" name="telField" class="width-30" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-123-123"  required /> </br>
+					Type of question: <br>
+					<select name="typeField" class="width-30">
+						<option value="course"> Question about course </option>
+						<option value="lesson" selected'> Question about lesson </option>
+					</select> <br>
+					Question: <br>
+					<textarea name="questionField" rows="5"class="width-30" minlength="3" required></textarea>  <br>
+					<input type="submit" value="SEND" class="button-yellow" onclick="questionsent()"/> <input type="reset" value="RESET" class="button-yellow"/>
+				</form>				
+			</div>
+		</div>	
+		
+		<div class="purple-text">
+			<b> Our address is: </b>
+			<address> Basmat Maharashtra 431512 </address> 
+		</div>
+	</div>
+	
+	<!-- Footer -->
+	
+	<div class="footer">
+		<div>
+			<a href="">
+				<img src="../images/fb.png" alt="fb not loaded" height="30" />
+			</a>
+			
+			<a href="">
+				<img src="../images/insta.jpeg" alt="insta not loaded" height="30" />
+			</a>
+			
+			<a href="">
+				<img src="../images/twitter.jpeg" alt="twitter not loaded" height="30" />
+			</a>
+		</div>
+		<p class="mt-0">copyright &copy; <a href="mailto: someaddress@mail.com class="grey-text">Let's Solve</a> <sup>&reg;</sup> </p>
+	</div>		
+	</body>
+</html>	
+
+
+
